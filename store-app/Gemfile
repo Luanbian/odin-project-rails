@@ -64,3 +64,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "factory_bot_rails", "~> 6.5"
+
+gem "faker", "~> 3.6"
+
+gem "mocha", "~> 3.0"
