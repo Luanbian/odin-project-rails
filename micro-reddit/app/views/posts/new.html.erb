@@ -1,0 +1,23 @@
+<h1>Create a New Post</h1>
+
+<%= form_with model: @post, local: true do |form| %>
+  <div>
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+  <div>
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+  <div>
+    <%= form.submit "Create Post" %>
+  </div>
+<% end %>
